@@ -4314,7 +4314,7 @@ table.dataTable tbody tr .tag.blue {
   overflow-y: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #navbar .side-menu {
     display: none;
   }
