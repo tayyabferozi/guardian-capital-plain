@@ -4255,11 +4255,27 @@ button {
   position: relative;
 }
 
+table.dataTable thead tr th:not(:first-child) {
+  text-align: center;
+}
+
 table.dataTable tbody tr.odd, table.dataTable tbody tr:hover {
   background-color: #f9f9f9;
 }
 
-table.dataTable tbody tr .tag {
+table.dataTable tbody tr td:not(:first-child),
+table.dataTable tbody tr th:not(:first-child) {
+  text-align: center;
+}
+
+table.dataTable tbody tr a {
+  text-decoration: none;
+}
+
+table.dataTable tbody tr .tag,
+table.dataTable tbody tr .prosper-icon,
+table.dataTable tbody tr .create-icon,
+table.dataTable tbody tr .a-icon {
   background: #eceae9;
   border-radius: 4px;
   padding: 6px 9px;
@@ -4270,7 +4286,23 @@ table.dataTable tbody tr .tag {
   font-family: "Montserrat", sans-serif;
 }
 
-table.dataTable tbody tr .tag.blue {
+table.dataTable tbody tr .tag.blue, table.dataTable tbody tr .tag.prosper-icon,
+table.dataTable tbody tr .prosper-icon.blue,
+table.dataTable tbody tr .prosper-icon.prosper-icon,
+table.dataTable tbody tr .create-icon.blue,
+table.dataTable tbody tr .create-icon.prosper-icon,
+table.dataTable tbody tr .a-icon.blue,
+table.dataTable tbody tr .a-icon.prosper-icon {
+  border-radius: 5px;
+  background: #2a9988 !important;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+table.dataTable tbody tr .tag.create-icon,
+table.dataTable tbody tr .prosper-icon.create-icon,
+table.dataTable tbody tr .create-icon.create-icon,
+table.dataTable tbody tr .a-icon.create-icon {
   border-radius: 5px;
   background: #00388a !important;
   color: #fff;
