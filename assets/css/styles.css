@@ -4687,7 +4687,7 @@ table.dataTable tbody tr .a-icon.create-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 90px;
+  gap: 50px;
 }
 
 @media screen and (max-width: 991px) {
